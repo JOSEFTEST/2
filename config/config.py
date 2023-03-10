@@ -17,34 +17,34 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "13923299"))
+API_HASH = getenv("500ff182245a31f3f941ffa2bc81192f")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("5455184404:AAG7JqJTVb-uyeyk8jUG10b8Qn30ipK8GCQ")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
+    getenv("DURATION_LIMIT", "6000")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "1800")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("🎧 𝗝𝗢𝗭 & 𝗭𝗛𝗢 🎧")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "399401433").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -65,23 +65,23 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None
+    "SUPPORT_CHANNEL", https://t.me/zho_josefo
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", True)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "5400")
+    getenv("ASSISTANT_LEAVE_TIME", "540000")
 )  # Remember to give value in Seconds
 
 # Time after which bot will suggest random chats about bot commands.
 AUTO_SUGGESTION_TIME = int(
-    getenv("AUTO_SUGGESTION_TIME", "5400")
+    getenv("AUTO_SUGGESTION_TIME", "540000")
 )  # Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
@@ -107,7 +107,7 @@ SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "5"))
 
 # Maximum Limit Allowed for users to save playlists on bot's server
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
@@ -117,14 +117,14 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "5")
+    getenv("CLEANMODE_MINS", "10")
 )  # Remember to give value in Seconds
 
 
 # Telegram audio  and video file size limit
 
 TG_AUDIO_FILESIZE_LIMIT = int(
-    getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600")
+    getenv("TG_AUDIO_FILESIZE_LIMIT", "10485760000")
 )  # Remember to give value in bytes
 
 TG_VIDEO_FILESIZE_LIMIT = int(
@@ -135,10 +135,10 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # If you want your bot to setup the commands automatically in the bot's menu set it to true.
 # Refer to https://i.postimg.cc/Bbg3LQTG/image.png
-SET_CMDS = getenv("SET_CMDS", False)
+SET_CMDS = getenv("SET_CMDS", True)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", AgB30O8NyGysMss222dboVFNaMVf5M2mb2rS_FQuwawyjVCu_cNLzL64VEke68YcueFMSMyLVkyYZcEuBZM0z7I7VzF4jqkV6HKSqosSJSAgVZGDZJrZ7f9MV4PF-JfqDWbArM2w_1tVE0ZcO7qz9b00tqkjfItuaiueRAGLZt3uXis2odPVfpQkXvxvqM9JLo-9yxm5E1oaO921wX7tp6VvlnZLx-gklyrEmzPt7FF8lrTwptEppzuQbp7X0w9OXyFIOQUOKdygHkxTwSZPAXSJlhE-Z01F2TwAMUESlrqq-ISVx5NiML25A_DcovMFettAIzUv-RubmUoNpnhx7tdQAAAAATPlyNUA)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
